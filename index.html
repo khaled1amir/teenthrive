@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Care For Teens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <div class="darkscreen" id="darkscreen"></div>
+    <div class="angryalert" id="angryalert">
+        <div class="alertcontent">
+            <img src="./images/sad.gif">
+            <div class="alerttext">
+                <h1>We're Sorry To Hear That!</h1>
+                <h2>Let tomorrow be better</h2>
+                <div class="startbutton" id="rmalert1">Okay</div>
+            </div>
+        </div>
+    </div>
+    <div class="sadalert"  id="sadalert">
+        <div  class="alertcontent">
+            <img src="./images/sad.gif">
+            <div class="alerttext">
+                <h1>We're Sorry To Hear That!</h1>
+                <h2>Let tomorrow be better</h2>
+                <div class="startbutton" id="rmalert2">Okay</div>
+            </div>
+        </div>
+    </div>
+    <div class="happyalert"  id="happyalert">
+        <div  class="alertcontent">
+            <img src="./images/party.gif">
+            <div class="alerttext">
+                <h1>We're glad To Hear That!</h1>
+                <h2>Let tomorrow be better though</h2>
+                <div class="startbutton" id="rmalert3">Okay</div>
+            </div>
+        </div>
+    </div>
+    <div class="veryhappyalert"  id="veryhappyalert">
+        <div class="alertcontent">
+            <img src="./images/confetti (1).gif">
+            <div class="alerttext">
+                <h1>We're So Proud Of You</h1>
+                <h2>Keep up with the good work</h2>
+                <div class="startbutton" id="rmalert4">Okay</div>
+            </div>
+        </div>
+    </div>
+    <main class="splash-screen" id="splashscreen">
+        <div class="splash-content">
+            <img src="./images/Self-Care Logo.png" alt="Our Logo" id="splash-logo">
+            <div class="startbutton" id="startbutton">Start Now</div>
+        </div>
+    </main>
+    <main class="login" id="login">
+        <div class="loginbox">
+            <h1 class="loginboxtitle">Login</h1>
+            <div class="loginform" id="loginform">
+                <form>
+                    <label for="lusername">Username</label>
+                    <input type="text" id="lusername" placeholder="Enter your username"/>
+                    <label for="lpassword">Password</label>
+                    <input type="password" id="lpassword" placeholder="Enter your password"/>
+                    <div class="startbutton" id="loginmain">Login</div>
+                </form>
+                <div id="signupnows">Not Signed Up? <a href="#" id="signupnowbtn">Signup Now</a></div>
+            </div>
+            <div class="signupform" id="signupform">
+                <form>
+                    <label for="susername">Username</label>
+                    <input type="text" id="susername" placeholder="Enter your username"/>
+                    <label for="spassword">Password</label>
+                    <input type="password" id="spassword" placeholder="Enter your password"/>
+                    <label for="sconfirmpassword">Confirm Password</label>
+                    <input type="password" id="sconfirmpassword" placeholder="Confirm your password"/>
+                    <div class="startbutton" id="signupmain">Signup</div>
+                </form>
+                <div class="loginnow" id="loginnows">Already have an account? <a href="#" id="loginnow">Login Now</a></div>
+            </div>
+            
+        </div>
+    </main>
+    <main class="dashboard" id="dashboard">
+        <header>
+            <div class="logo" id="logo">
+                <img src="./images/Self-Care Logo.png" alt="our logo" id="mainlogo" style="cursor: pointer;">
+            </div>
+            <nav>
+                <ul>
+                    <li><a id="home" style="cursor: pointer;">Home</a></li>
+                    <li><a id="about" style="cursor: pointer;">About Us</a></li>
+                    <li><a id="contact" style="cursor: pointer;">Contact Us</a></li>
+                    <li><a id="account" style="cursor: pointer;">My Account</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="dashcontent">
+            <section class="dayPicker" id="dayPicker">
+                <div class="navdiv">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Sun</a></li>
+                            <li><a href="#">Mon</a></li>
+                            <li><a href="#">Tue</a></li>
+                            <li><a href="#">Wed</a></li>
+                            <li><a href="#">Thu</a></li>
+                            <li><a href="#">Fri</a></li>
+                            <li><a href="#">Sat</a></li>
+                        </ul>
+                    </nav>
+                    <div id="calendar">
+                        <img src="./images/image 4.png">
+                    </div>
+                </div>
+            </section>
+            <section class="dailyIntake" id="dailyIntake">
+                <div class="trackers">
+                    <div class="activities">
+                        <div class="title">
+                            <h2>Self-Care Activities</h2>
+                        </div>
+                        <div class="tasks">
+                            <form id="tasksform">
+                                <div class="task">
+                                    <input type="checkbox" id="check1" class="checks">
+                                    <input type="text" id="task1" placeholder="Enter the first activity" class="input">
+                                </div>
+                                <div class="task">
+                                    <input type="checkbox" id="check2" class="checks">
+                                    <input type="text" id="task2" placeholder="Enter the second activity" class="input">
+                                </div>
+                                <div class="task">
+                                    <input type="checkbox" id="check3" class="checks">
+                                    <input type="text" id="task3" placeholder="Enter the third activity" class="input">
+                                </div>
+                                <div class="task">
+                                    <input type="checkbox" id="check4" class="checks">
+                                    <input type="text" id="task4" placeholder="Enter the fourth activity" class="input">
+                                </div>
+                                <div class="task">
+                                    <input type="checkbox" id="check5" class="checks">
+                                <input type="text" id="task5" placeholder="Enter the fifth activity" class="input">
+                                </div>
+                                <div class="startbutton" id="addTask">Add Activity</div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="biotrackers">
+                        <div class="mood">
+                            <div class="title">
+                                <h2>Overall Mood</h2>
+                            </div>
+                            <div class="raterange">
+                                <img src="./images/angry.png" id="angry">
+                                <img src="./images/sad.png" id="sad">
+                                <img src="./images/happiness.png"  id="happy">
+                                <img src="./images/happy.png"  id="veryhappy">
+                            </div>
+                        </div>
+                        <div class="water">
+                            <div class="title">
+                                <h2>Water Intake</h2>
+                            </div>
+                            <div class="raterange">
+                                <img src="./images/glass-of-water 1.png">
+                                <img src="./images/glass-of-water 1.png">
+                                <img src="./images/glass-of-water 1.png">
+                                <img src="./images/glass-of-water 1.png">
+                                <img src="./images/glass-of-water 1.png">
+                                <img src="./images/glass-of-water 1.png">
+                                <img src="./images/glass-of-water 1.png">
+                            </div>
+                        </div>
+                        <div class="sleep">
+                            <div class="title">
+                            <h2>Sleep Hours</h2>
+                            </div>
+                        <div class="raterange">
+                            <img src="./images/crescent-moon 1.png">
+                            <img src="./images/crescent-moon 1.png">
+                            <img src="./images/crescent-moon 1.png">
+                            <img src="./images/crescent-moon 1.png">
+                            <img src="./images/crescent-moon 1.png">
+                            <img src="./images/crescent-moon 1.png">
+                            <img src="./images/crescent-moon 1.png">
+                        </div></div>
+                    </div>
+                </div>
+                <div class="happy3">
+                    <div class="title">
+                        <h2>3 Things that made me happy today</h2>
+                    </div>
+                    <div class="things3form">
+                        <div>
+                            <h2 class="n">1.</h2>
+                            <input type="text" class="things3input" placeholder="Enter the first thing">
+                        </div>
+                        <div>
+                            <h2 class="n">2.</h2>
+                            <input type="text" class="things3input" placeholder="Enter the second thing">
+                        </div>
+                        <div>
+                            <h2 class="n">3.</h2>
+                            <input type="text" class="things3input" placeholder="Enter the third thing">
+                        </div>
+                    </div>
+                </div>
+                <div class="notes">
+                    <div class="nutrient">
+                        <div class="title">
+                            <h2>Daily Nutrient</h2>
+                        </div>
+                        <div class="meals">
+                            <div class="breakfast">
+                                <p>Breakfast</p>
+                                <textarea placeholder="Enter your breakfast"></textarea>
+                            </div>
+                            <div class="lunch">
+                                <p>Lunch</p>
+                                <textarea placeholder="Enter your lunch"></textarea>
+                            </div>
+                            <div class="dinner">
+                                <p>Dinner</p>
+                                <textarea  placeholder="Enter your dinner"></textarea>
+                            </div>
+                            <div class="snacks">
+                                <p>Snacks</p>
+                                <textarea placeholder="Enter your snacks"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="note">
+                        <div class="title">
+                            <h2>Notes</h2>
+                        </div>
+                        <textarea placeholder="Enter your notes"></textarea>
+                    </div>
+                </div>
+                <footer>
+                    <p></p>
+                </footer>
+            </section>
+        </section>
+        <section id="deepanalysis">
+            <h1>Self-Care Deep Analysis is coming soon...</h1>
+        </section>
+        <section id="aboutus">
+            <h1>About us</h1>
+            <p>Welcome to Teen Thrive, a non-profit organization dedicated to promoting self-care and well-being among teenagers. Our mission is to empower teens with the knowledge, tools, and support they need to navigate the challenges of adolescence and build a healthy, balanced lifestyle. Through workshops, resources, and a supportive community, we focus on mental health, physical wellness, and personal growth. At Teen Thrive, we believe that every teen deserves the opportunity to thrive and reach their full potential. Join us in creating a brighter, healthier future for the next generation.</p>
+        </section>
+        <section id="contactus">
+            <h1>Contact Us</h1>
+            <p>Phone: 000000000000</p>
+            <p>Email: info@teenthrive.com</p>
+            <p>LinkTree: <a href="https://linktr.ee/selfcare_teens">HERE</a></p>
+        </section>
+    </main>
+    <!-- Linking the JavaScript File -->
+     <script src="main.js"></script>
+</body>
+</html>

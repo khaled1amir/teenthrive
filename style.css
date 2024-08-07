@@ -1,0 +1,556 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+.darkscreen {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 300vh;
+    z-index: 1000;
+    background-color: #000;
+    opacity: 60%;
+}
+
+.angryalert,
+.sadalert,
+.happyalert,
+.veryhappyalert {
+    position: absolute;
+    z-index: 1000;
+    background-color: #fff;
+    width: 70%;
+    height: 80%;
+    border-radius: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.angryalert .alertcontent,
+.sadalert .alertcontent,
+.happyalert .alertcontent,
+.veryhappyalert .alertcontent {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center
+}
+
+.angryalert img,
+.sadalert img,
+.happyalert img,
+.veryhappyalert img {
+    /* transform: scale(30%) translateY(-550px); */
+    width: 120px;
+    
+}
+
+.alerttext {
+    width: 900px;
+    height: 400px;
+    height: 80%;
+    /* transform: translateY(-350px); */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.alerttext h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #347F59;
+    margin-bottom: 35px;
+}
+
+.alerttext h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 35px;
+}
+
+#rmalert1, #rmalert2, #rmalert3, #rmalert4 {
+    background-color: #347F59;
+    width: 150px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+}
+
+.splash-screen{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(86, 100%, 83%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.splash-screen .splash-content {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.splash-screen .splash-content img{
+    width: 200px;
+}
+
+.startbutton {
+    background-color: #347F59;
+    width: 150px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+}
+
+.splash-screen .splash-content .startbutton:hover {
+    border: 2px solid #fff;
+}
+
+.login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(86, 100%, 83%);
+}
+
+.login .loginbox {
+    width: 800px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+.login .loginbox .loginboxtitle {
+    margin: 15px;
+}
+
+.login .loginbox .loginform {
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+}
+
+.login .loginbox .loginform form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: right;
+}
+
+.login .loginbox .loginform form input {
+    margin-bottom: 15px;
+    height: 40px;
+    padding: 0 5px;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid #347F59;
+    font-size: 18px;
+}
+
+.login .startbutton {
+    margin-bottom: 20px;
+}
+
+.loginnow {
+    display: none;
+}
+
+.signupform {
+    display: none;
+}
+
+.login .loginbox .signupform {
+    width: 600px;
+    height: 350px;
+    padding: 20px;
+}
+
+.login .loginbox .signupform form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: right;
+}
+
+.login .loginbox .signupform form input {
+    margin-bottom: 15px;
+    height: 40px;
+    padding: 0 5px;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid #347F59;
+    font-size: 18px;
+}
+.dashboard {
+    width: 100%;
+    height: 100%;
+}
+.dashboard header {
+    width: 100%;
+    height: 100px;
+    background-color: hsl(86, 100%, 83%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+.dashboard header .logo {
+    width: 80px;
+}
+.dashboard header .logo img {
+    width: 100%;
+}
+
+.dashboard header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.dashboard header nav ul li a {
+    text-decoration: none;
+    color: #347F59;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dashboard .dayPicker {
+    height: 80px;
+    margin: 20px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dayPicker .navdiv {
+    width: 100%;
+    height: 70px;
+    border: 2px solid #347F59;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dayPicker #calendar img {
+    width: 40px;
+    cursor: pointer;
+}
+.dayPicker #calendar img:hover {
+    transform: scale(105%);
+}
+
+.dashboard .dayPicker nav ul li {
+    display: inline-block;
+    margin-right: 50px;
+}
+.dashboard .dayPicker nav ul li a {
+    text-decoration: none;
+    color: #347F59;
+    font-size: 24px;
+    font-weight: bold
+}
+.dashboard .dailyIntake {
+    width: 100%;
+    height: 800px;
+    padding: 20px 60px;
+}
+
+.dailyIntake .trackers {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dailyIntake .trackers .activities {
+    padding: 20px;
+    width: 45%;
+    height: 100%;
+    border: 2px solid #000;
+    border-radius: 20px;
+}
+.dailyIntake  .title{
+    width: 60%;
+    height: 50px;
+    background-color: hsl(86, 100%, 83%);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 40px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+.dailyIntake .title h2 {
+    color: darkblue;
+}
+.dailyIntake .trackers .activities .tasks {
+    width: 100%;
+}
+.dailyIntake .trackers .activities .tasks .task {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.dailyIntake .trackers .activities .tasks .checks {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.dailyIntake .trackers .activities .tasks .input {
+    width: 90%;
+    height: 30px;
+    padding: 0 5px;
+    outline: none;
+    border: 0;
+    font-size: 18px;
+}
+#addTask {
+    width: 100%;
+}
+
+.dailyIntake .trackers .biotrackers {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dailyIntake .trackers .biotrackers .mood,
+.dailyIntake .trackers .biotrackers .water,
+.dailyIntake .trackers .biotrackers .sleep{
+    width: 100%;
+    height: 200px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.dailyIntake .trackers .raterange {
+    width: 70%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dailyIntake .trackers .raterange img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    
+}
+.dailyIntake .trackers .raterange img:hover {
+    transform: scale(110%);
+}
+.happy3 {
+    width: 100%;
+    height: 350px;
+    margin: 15px 0;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 20px;
+}
+
+.things3form {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: right;
+}
+
+.things3form div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.things3form div h2{
+    display: inline-block;
+    margin-right: 15px;
+    color: #347F59;
+}
+
+.things3form div .things3input {
+    width: 90%;
+    height: 50px;
+    padding: 0 5px;
+    outline: none;
+    border: 0;
+    font-size: 18px;
+    border-bottom: 1px solid #347F59;
+}
+
+.notes {
+    width: 100%;
+    height: 500px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nutrient {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 20px;
+}
+
+.nutrient .meals {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nutrient .meals div {
+    width: 50%;
+    padding: 20px;
+}
+.nutrient .meals div p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.nutrient .meals div textarea {
+    width: 100%;
+    height: 75%;
+    resize: none;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 20px;
+    color: #347F59;
+    font-weight: bold;
+}
+
+.breakfast {
+    border: none;
+    border-right: 2px solid #347F59;
+    border-bottom: 2px solid #347F59;
+}
+.lunch {
+    border-bottom: 2px solid #347F59;
+}
+.dinner {
+    border-right: 2px solid #347F59;
+}
+
+.note {
+    width: 45%;
+    height: 100%;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 20px;
+}
+
+.note textarea {
+    width: 100%;
+    height: 75%;
+    resize: none;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 20px;
+    color: #347F59;
+    font-weight: bold;
+}
+
+#deepanalysis {
+    display: none;
+    width: 100%;
+    height: calc(100vh - 100px);
+    justify-content: center;
+    align-items: center;
+}
+
+#deepanalysis h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    color: #347F59;
+}
+
+#aboutus {
+    display: none;
+    width: 100%;
+    height: calc(100vh - 100px);
+    padding: 40px;
+}
+
+#aboutus h1 {
+    color: darkblue;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+#aboutus p {
+    font-size: 18px;
+    line-height: 50px;
+}
+
+#contactus {
+    display: none;
+    width: 100%;
+    height: calc(100vh - 100px);
+    padding: 40px;
+}
+
+#contactus h1 {
+    color: darkblue;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+#contactus p {
+    font-size: 18px;
+    line-height: 50px;
+}

@@ -4,9 +4,9 @@ startbutton = document.getElementById("startbutton");
 loginpage = document.getElementById("login")
 dashboardpage = document.getElementById("dashboard");
 
-splashscreen.style.display = "none";
+splashscreen.style.display = "flex";
 loginpage.style.display = "none";
-dashboardpage.style.display = "block";
+dashboardpage.style.display = "none";
 
 startbutton.onclick = function startFunction(){
     splashscreen.style.display = 'None';

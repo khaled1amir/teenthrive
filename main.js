@@ -4,9 +4,9 @@ startbutton = document.getElementById("startbutton");
 loginpage = document.getElementById("login")
 dashboardpage = document.getElementById("dashboard");
 
-splashscreen.style.display = "flex";
+splashscreen.style.display = "none";
 loginpage.style.display = "none";
-dashboardpage.style.display = "none";
+dashboardpage.style.display = "block";
 
 startbutton.onclick = function startFunction(){
     splashscreen.style.display = 'None';
@@ -207,6 +207,7 @@ account.onclick = function rmdashcontent(){
     deepanalysis.style.display = "flex";
     aboutus.style.display = "none";
     contactus.style.display = "none";
+    recommend.style.display = "none";
 }
 
 home = document.getElementById("home")
@@ -216,6 +217,7 @@ home.onclick = function goHome(){
     deepanalysis.style.display = "none";
     aboutus.style.display = "none";
     contactus.style.display = "none";
+    recommend.style.display = "none";
 }
 
 about = document.getElementById("about")
@@ -226,6 +228,7 @@ about.onclick = function goHome(){
     aboutus.style.display = "block";
     deepanalysis.style.display = "none";
     contactus.style.display = "none";
+    recommend.style.display = "none";
 }
 
 contact = document.getElementById("contact")
@@ -236,6 +239,7 @@ contact.onclick = function goHome(){
     aboutus.style.display = "none";
     deepanalysis.style.display = "none";
     contactus.style.display = "block";
+    recommend.style.display = "none";
 }
 
 mainlogo = document.getElementById("mainlogo");
@@ -245,4 +249,16 @@ mainlogo.onclick = function(){
     deepanalysis.style.display = "none";
     aboutus.style.display = "none";
     contactus.style.display = "none";
+    recommend.style.display = "none";
+}
+
+recommendTab = document.getElementById("recommendTab");
+recommend = document.getElementById("recommend");
+
+recommendTab.onclick = function(){
+    dashcontent.style.display = "none";
+    aboutus.style.display = "none";
+    deepanalysis.style.display = "none";
+    contactus.style.display = "none";
+    recommend.style.display = "block";
 }

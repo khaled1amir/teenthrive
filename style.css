@@ -308,7 +308,7 @@ body {
     border: 2px solid #000;
     border-radius: 20px;
 }
-.dailyIntake  .title{
+.title{
     width: 60%;
     height: 50px;
     background-color: hsl(86, 100%, 83%);
@@ -319,7 +319,7 @@ body {
     margin-bottom: 30px;
     padding: 0 20px;
 }
-.dailyIntake .title h2 {
+.title h2 {
     color: darkblue;
 }
 .dailyIntake .trackers .activities .tasks {
@@ -553,4 +553,49 @@ body {
 #contactus p {
     font-size: 18px;
     line-height: 50px;
+}
+
+#recommend {
+    display: none;
+    padding: 40px;
+}
+
+.recommendations {
+    width: 100%;
+    height: 1300px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.r {
+    width: 250px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.r .imgBox {
+    width: 95%;
+    height: 50%;
+    border-radius: 5px;
+}
+.r img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.r .textBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
 }
